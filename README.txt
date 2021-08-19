@@ -11,4 +11,5 @@ $(domEl).on 'click', '#iCloud', => @run "open '/Users/your_userid/Library/Mobile
 
 Replace: /your_userid/ with your finder name like mine is '/Users/aaryavjaiswal/Library/Mobile\' :)
 
-I hope you enjoyed it!!!
+Thanks!!!
+
