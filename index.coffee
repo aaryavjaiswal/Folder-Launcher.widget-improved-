@@ -7,6 +7,10 @@ render: ->"""
   <img src="folder-launcher.widget/Icons/iCloud.png">
 </li>
 <br>
+<li class="button" id="Computer">
+  <img src="folder-launcher.widget/Icons/Computer.png">
+</li>
+<br>
 <li class="button" id=Disk>
   <img src="folder-launcher.widget/Icons/Disk.png">
 </li>
@@ -42,6 +46,7 @@ render: ->"""
 
 afterRender: (domEl) ->
   $(domEl).on 'click', '#iCloud', => @run "open '/Users/your_userid/Library/Mobile\ Documents/com~apple~CloudDocs'"
+  $(domEl).on 'click', '#Computer', => @run "cd ~/Library/Application\\ Support/Übersicht/widgets/launchers.widgets/folder-launcher.widget/ && ./script.sh"
   $(domEl).on 'click', '#Downloads', => @run "open ~/Downloads"
   $(domEl).on 'click', '#Disk', => @run "open '/'"
   $(domEl).on 'click', '#Home', => @run "open ~"
